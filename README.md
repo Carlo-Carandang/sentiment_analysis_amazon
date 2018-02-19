@@ -1,2 +1,4 @@
 # sentiment_analysis_amazon
-Sentiment analysis trained on Amazon reviews utilizing Naive Bayes, SVM, and Decision Trees (with K-fold Cross Validation)
+Sentiment analysis trained on Amazon reviews utilizing Naive Bayes, SVM, and Decision Trees (with K-fold Cross Validation). 
+  
+This is my repo on Classifiers using training data regarding Amazon product reviews. The folder includes the training dataset, the scripts, and output of those scripts. I started with a Naive Bayes classifier, and it only had an accuracy of 0.785. When I added 10-fold cross validation of the training/test dataset, the Naive Bayes classifier increased in accuracy to 0.792. Switching to an SVM classifier further increased the accuracy to 0.823. When I switched to a Decision Tree classifier, the calculations took too long at word_features = 2500. When I decreased it to 250, it still took too long to compute. Finally, I had to decrease the features to 50, and it finally gave me an output, but the accuracy was only 0.463. This low accuracy for Decision Trees was mainly due to the limited computing power of my laptop, and therefore had to decrease the features from 2500 to 50.
